@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>LearningHub</title>
+  </head>
+
+  <style>
+    body{
+        font-family: "Roboto", sans-serif;
+    }
+    .header,.footer {
+      background-color: rgb(45, 4, 121);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .header h1 {
+      color: #fff;
+     text-align: center;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .footer{
+        height: 60px;
+    }
+    .footer a{
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+
+    }
+  </style>
+  <body>
+    <div class="header">
+      <h1>Welcome to LearningHub</h1>
+    </div>
+    <div class="contents">
+      <h4>Hello, <%= user.name %>,</h4>
+      <h5>
+        Thank you for Registering with LearningHub . To activate your account,
+        Please use the following Code:
+      </h5>
+      <h1 class="Code"><%= activationCode %></h1>
+      <h5>please enter this code , within 5 minutes.</h5>
+      <h5>
+        If you did not wants to Register with LearningHub , Please Ignore this
+        mail!
+      </h5>
+    </div>
+    <div class="footer">
+      <a href="mailto:kinghimanshurajyadav11@gmail.com"
+        >kinghimanshurajyadav11@gmail.com</a
+      >
+    </div>
+  </body>
+</html>
